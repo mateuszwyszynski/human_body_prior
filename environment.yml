@@ -1,0 +1,22 @@
+name: vposer
+channels:
+  - pytorch
+  - nvidia
+  - pytorch3d
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.7
+  - cudatoolkit=11.0
+  - pytorch==1.7.1
+  - torchaudio==0.7.2
+  - torchvision==0.8.2
+  - transforms3d=0.3.1
+  - pytorch3d
+  - dotmap
+  - loguru
+  - numpy
+  - omegaconf
+  - pytorch-lightning
+  - pyyaml
+  - tqdm

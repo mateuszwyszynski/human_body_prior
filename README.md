@@ -27,17 +27,38 @@ VPoser has the following features:
   * [Contact](#contact)
   * [FAQ](https://github.com/nghorbani/human_body_prior/wiki/FAQ)
 
-## Installation
-**Requirements**
+## Requirements:
 - Python 3.7
 - [PyTorch 1.7.1](https://pytorch.org/get-started)
 
 [comment]: <> (- [Torchgeometry 0.1.2]&#40;https://pypi.org/project/torchgeometry/0.1.2/&#41;)
 
 [comment]: <> (- [Body Visualizer]&#40;https://github.com/nghorbani/body_visualizer&#41; for visualizations)
-  
 
-Clone this repo and run the following from the root folder:
+## Installation
+
+Install using either conda (recommended) or pip.
+
+### Conda (recommended)
+
+Installation through conda is recommended, because it automatically:
+ - takes care of all requirements
+ - deals with cuda dependencies for pytorch
+
+1. Clone this repo
+2. Set up an environment and install `human_body_prior`:
+
+```bash
+conda env create -f environment.yml
+python setup.py develop
+```
+
+### Pip
+
+1. Clone this repo
+2. Set up an environment and install `human_body_prior`:
+
+
 ```bash
 pip install -r requirements.txt
 python setup.py develop
