@@ -44,7 +44,7 @@ python setup.py develop
 ```
 
 ## Tutorials
-Some of the tutorials below might require installing [body_visualizer](https://github.com/nghorbani/body_visualizer).
+Some of the tutorials below might require installing [body_visualizer](https://github.com/mateuszwyszynski/body_visualizer).
 
 ![alt text](support_data/latent_interpolation_1.gif "Interpolation of novel poses on the smoother VPoser latent space.")
 ![alt text](support_data/latent_interpolation_2.gif "Interpolation of novel poses on the smoother VPoser latent space.")
