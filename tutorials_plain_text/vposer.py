@@ -95,7 +95,7 @@ all_pose_body = torch.stack([amass_body_pose[t], amass_body_pose_rec[t]])
 all_pose_body.shape
 
 # %%
-images = render_smpl_params(bm, {'pose_body':all_pose_body}).reshape(1,2,1,400,400,3)
+images = render_smpl_params(bm, {'pose_body':all_pose_body}).reshape(1,2,1,800,800,3)
 img = imagearray2file(images)
 show_image(img[0])
 
@@ -113,7 +113,7 @@ pose_body = vp.decode(poZ_body_sample)['pose_body'].contiguous().view(-1, 63)
 print('poZ_body_sample.shape', poZ_body_sample.shape)
 print('pose_body.shape', pose_body.shape)
 
-images = render_smpl_params(bm, {'pose_body':pose_body}).reshape(1,1,1,400,400,3)
+images = render_smpl_params(bm, {'pose_body':pose_body}).reshape(1,1,1,800,800,3)
 img = imagearray2file(images)
 show_image(img[0])
 
